@@ -27,22 +27,21 @@ public final class Microwave {
     * @param args Unused.
     */
     public static void main(String[] args) {
-
-
         final Scanner scanner = new Scanner(System.in);
-        
+
         try {
             // Using scanner to get the food.
             System.out.println("Are you heating pizza, sub, or soup?");
-            
+
             final String userFood = scanner.nextLine();
 
             // Using scanner to get the number of food.
-            System.out.println("how many " + userFood + "(s) are you heating up (1, 2, 3)?");
-            String foodNum = scanner.nextLine();
+            System.out.println("how many " + userFood
+                + "(s) are you heating up (1, 2, 3)?");
+            final String foodNum = scanner.nextLine();
 
             // Make user input a double.
-            int foodNumInt = Integer.parseInt(foodNum);
+            final int foodNumInt = Integer.parseInt(foodNum);
 
             // setting constants.
             final int PIZZA_TIME = 45;
@@ -54,61 +53,70 @@ public final class Microwave {
 
             // finding out what food and the number of food they chose.
             if (PIZZA.equals(userFood)) {
-                if (foodNumDouble == 1) {
-                    //calculate the time
-                    double totalTime = PIZZA_TIME;
+                if (foodNumInt == 1) {
+                    // calculate the time
+                    final double totalTime = PIZZA_TIME;
+                    // Print the total time.
+                    System.out.println("The total time to heat it up is "
+                        + totalTime + " seconds.");
+                } else if (foodNumInt == 2) {
+                    // calculate the time
+                    final double totalTime = PIZZA_TIME * 1.5;
                     // Print the total time..
-                    System.out.println("The total time to heat it up is " + totalTime + " seconds.");
-                } else if (foodNumDouble == 2) {
-                    //calculate the time
-                    double totalTime = PIZZA_TIME * 1.5;
+                    System.out.println("The total time to heat it up is "
+                        + totalTime + " seconds.");
+                } else if (foodNumInt == 3) {
+                    // calculate the time
+                    final double totalTime = PIZZA_TIME * 2;
                     // Print the total time..
-                    System.out.println("The total time to heat it up is " + totalTime + " seconds.");
-                } else if (foodNumDouble == 3) {
-                    //calculate the time
-                    double totalTime = PIZZA_TIME * 2;
-                    // Print the total time..
-                    System.out.println("The total time to heat it up is " + totalTime + " seconds.");
+                    System.out.println("The total time to heat it up is "
+                        + totalTime + " seconds.");
                 } else {
                     // Print this if the user enter an invalid input.
                     System.out.println("This in not a valid input.");
                 }
             } else if (SUB.equals(userFood)) {
-                if (foodNumDouble == 1) {
-                    //calculate the time
-                    double totalTime = SUB_TIME;
+                if (foodNumInt == 1) {
+                    // calculate the time
+                    final double totalTime = SUB_TIME;
                     // Print the total time..
-                    System.out.println("The total time to heat it up is " + totalTime + " seconds.");
-                } else if (foodNumDouble == 2) {
-                    //calculate the time
-                    double totalTime = SUB_TIME * 1.5;
+                    System.out.println("The total time to heat it up is "
+                        + totalTime + " seconds.");
+                } else if (foodNumInt == 2) {
+                    // calculate the time
+                    final double totalTime = SUB_TIME * 1.5;
                     // Print the total time..
-                    System.out.println("The total time to heat it up is " + totalTime + " seconds.");
-                } else if (foodNumDouble == 3) {
-                    //calculate the time
-                    double totalTime = SUB_TIME * 2;
+                    System.out.println("The total time to heat it up is "
+                        + totalTime + " seconds.");
+                } else if (foodNumInt == 3) {
+                    // calculate the time
+                    final double totalTime = SUB_TIME * 2;
                     // Print the total time..
-                    System.out.println("The total time to heat it up is " + totalTime + " seconds.");
+                    System.out.println("The total time to heat it up is "
+                        + totalTime + " seconds.");
                 } else {
                     // Print this if the user enter an invalid input.
                     System.out.println("This in not a valid input.");
                 }
             } else if (userFood.equals(SOUP)) {
-                if (foodNumDouble == 1) {
-                    //calculate the time
-                    double totalTime = SOUP_TIME;
+                if (foodNumInt == 1) {
+                    // calculate the time
+                    final double totalTime = SOUP_TIME;
                     // Print the total time..
-                    System.out.println("The total time to heat it up is " + totalTime + " seconds.");
-                } else if (foodNumDouble == 2) {
-                    //calculate the time
-                    double totalTime = SOUP_TIME * 1.5;
+                    System.out.println("The total time to heat it up is "
+                        + totalTime + " seconds.");
+                } else if (foodNumInt == 2) {
+                    // calculate the time
+                    final double totalTime = SOUP_TIME * 1.5;
                     // Print the total time..
-                    System.out.println("The total time to heat it up is " + totalTime + " seconds.");
-                } else if (foodNumDouble == 3) {
-                    //calculate the time
-                    double totalTime = SOUP_TIME * 2;
+                    System.out.println("The total time to heat it up is "
+                        + totalTime + " seconds.");
+                } else if (foodNumInt == 3) {
+                    // calculate the time
+                    final double totalTime = SOUP_TIME * 2;
                     // Print the total time..
-                    System.out.println("The total time to heat it up is " + totalTime + " seconds.");
+                    System.out.println("The total time to heat it up is "
+                        + totalTime + " seconds.");
                 } else {
                     // Print this if the user enter an invalid input.
                     System.out.println("This in not a valid input.");
